@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -73,6 +74,89 @@ footer {
   z-index: 16;
 }
 footer ul li, footer ul li a {
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  font-family: arial;
+}
+
+
+
+header{
+  position: fixed;
+  height:30px;
+  width: 100%;
+  background-color: grey;
+  position:fixed;
+  top:0;
+  z-index: 10;
+
+}
+
+#topinfo, #droplang{
+  display: block;
+  list-style: none;
+}
+
+#droplang ul{overflow: hidden;}
+
+#topinfo{
+  background-color: white;
+  color:#CCCCCC;
+}
+
+#topinfo ul li, #droplang ul li{
+  height:30px;
+  padding:1px;
+  margin:1px;
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+  top :2px;
+  margin-left: 90px;
+  text-align: right;
+}
+
+#droplang{
+  position: absolute;
+  top:0;
+  left:90%
+}
+
+#droplang :hover{
+  height:auto;
+  width: 30%;
+  text-decoration: underline;
+  z-index: 12;
+  top :20px;
+  margin-left: 90px;
+  background-color: grey;
+  border-radius: 2px;
+}
+
+
+
+
+footer{
+  height: 20px;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  /*top:95%;*/
+  bottom:0;
+  z-index: 16;
+}
+
+footer ul li {
+
   font-size: 9px;
   color: white;
   list-style: none;
@@ -81,16 +165,25 @@ footer ul li, footer ul li a {
   text-align: center;
   display: inline-block;
   position: relative;
+
 }
 
 /*///////////contenu central/////////////////////*/
 .containt {
   height: 60%;
   /*auto*/
+
+  z-index: 18;
+}
+
+
+.containt{
+  height: 70%; /*auto*/
   /*min-height: 100%;*/
   width: 70%;
   /*min-width: 200%;*/
   z-index: 1;
+
   position: absolute;
   margin: auto;
   top: 25%;
@@ -230,4 +323,56 @@ height:14px;
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
+
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: yellow;
+  top:12%;
 }
+
+
+
+a{text-decoration: 0;
+text-align: center;
+margin: 2px;
+color:grey;}
+
+
+
+
+
+
+/*ul{
+  left: 600px;
+  position: absolute;
+  top:150px;
+}
+
+li{
+  padding: 3px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin: 2px;
+  width: 200px;
+  list-style-type: none;
+  color:grey;
+  position: relative;
+  right:30px;
+}*/
+
+/*#footer{
+  background-color: white;
+  height:140px;
+  width: auto;
+  padding: 0 100px;
+  position: absolute;
+  top:500px;
+  left:0;
+}
+
+#footer p{
+  color:grey;
+  bottom:0;
+}*/
